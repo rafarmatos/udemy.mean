@@ -4,7 +4,8 @@
   "description": "",
   "main": "loader.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon",
+    "production": "pm2 start loader.js --name backend"
   },
   "author": "Rafael Matos",
   "license": "ISC",
@@ -17,5 +18,8 @@
     "mongoose-paginate": "^5.0.3",
     "node-restful": "^0.2.6",
     "pm2": "^2.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
   }
 }
