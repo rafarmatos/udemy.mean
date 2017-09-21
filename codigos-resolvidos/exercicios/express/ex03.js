@@ -4,7 +4,7 @@ const server = express()
 server.use(function(req, res, next) {
   console.log('Inicio...')
   next()
-  console.log('Fim...')
+  console.log('Fim..dd.')
 })
 
 server.use(function(req, res) {
